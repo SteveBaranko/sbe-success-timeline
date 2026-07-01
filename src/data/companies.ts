@@ -720,6 +720,34 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    slug: "nimbello",
+    name: "Nimbello (formerly Easy Access)",
+    website: "https://www.nimbello.com/",
+    location: "Granger, IN",
+    foundedDisplay: "2010",
+    foundedYear: 2010,
+    lat: 41.7420,
+    lng: -86.1189,
+    industry: "Technology",
+    originBlurb: "Founded 2010 in Granger by Milind Agtey, a Notre Dame MBA and former Crowe tax partner who emigrated from India in 1977; bootstrapped by borrowing against his own home mortgage.",
+    classification: "Success Story (exceptional)",
+    founderNames: "Milind Agtey & Sunjay Agtey",
+    founderBlurb: "A father who emigrated from India with nothing built a purchase-to-pay automation company from his home mortgage; his son, a Notre Dame EMBA who'd built a career at Groupon and other Chicago tech startups, joined in 2020 and helped drive 300% revenue growth before a clean, founder-driven exit.",
+    dnbIndustry: "Business Support Services",
+    naicsDescription: "Data Processing, Hosting, and Related Services",
+    employeesTotal: "50",
+    exits: [
+      {
+        acquiredBy: "PairSoft",
+        yearDisplay: "March 19, 2026",
+        year: 2026,
+        dealValue: "Not disclosed",
+        rationale: "Founder Milind Agtey personally decided to sell after growing the company from a bootstrapped 2010 startup into a 60+ customer, 50-employee purchase-order-matching specialist with 300% revenue growth from 2022-2025 \u2014 his own on-record quote frames the sale as the natural next step after achieving his founding goal, not a distress exit. A clean, founder-driven sale to a well-capitalized acquirer.",
+        source: "https://www.pairsoft.com/resources/news-events/pairsoft-acquires-nimbello/",
+      },
+    ],
+  },
 ];
 
 export const industries = Array.from(new Set(companies.map((c) => c.industry))).sort();
