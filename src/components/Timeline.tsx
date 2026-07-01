@@ -251,7 +251,20 @@ export default function Timeline() {
             >
               {active.industry}
             </div>
-            <h3 className="tl-card-title">{active.name}</h3>
+            <h3 className="tl-card-title">
+              {active.website ? (
+                <a
+                  href={active.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tl-card-title-link"
+                >
+                  {active.name}
+                </a>
+              ) : (
+                active.name
+              )}
+            </h3>
             <div className="tl-card-meta mono">
               {active.location} · Founded {active.foundedDisplay ?? "???"}
             </div>

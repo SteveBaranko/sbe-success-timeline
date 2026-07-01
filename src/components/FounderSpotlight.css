@@ -99,6 +99,27 @@
   color: var(--ink);
 }
 
+.spotlight-company-name-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.spotlight-company-name-link:hover,
+.spotlight-company-name-link:focus-visible {
+  border-bottom-color: var(--ink);
+}
+
+.spotlight-company-name-link::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.55em;
+  vertical-align: super;
+  opacity: 0.55;
+}
+
 .spotlight-company-meta {
   margin-top: 8px;
   font-size: 12.5px;

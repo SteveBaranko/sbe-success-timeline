@@ -14,6 +14,7 @@ export interface Exit {
 export interface Company {
   slug: string;
   name: string;
+  website: string | null;
   location: string | null;
   foundedDisplay: string | null;
   foundedYear: number | null;
@@ -34,6 +35,7 @@ export const companies: Company[] = [
   {
     slug: "keystone-rv",
     name: "Keystone RV",
+    website: "https://www.keystonerv.com/",
     location: "Goshen, IN",
     foundedDisplay: "1996",
     foundedYear: 1996,
@@ -61,6 +63,7 @@ export const companies: Company[] = [
   {
     slug: "forest-river-inc",
     name: "Forest River, Inc.",
+    website: "https://en.wikipedia.org/wiki/Forest_River_(company)",
     location: "Elkhart, IN",
     foundedDisplay: "1996",
     foundedYear: 1996,
@@ -88,6 +91,7 @@ export const companies: Company[] = [
   {
     slug: "tire-rack-inc",
     name: "Tire Rack, Inc.",
+    website: "https://en.wikipedia.org/wiki/Tire_Rack",
     location: "South Bend, IN",
     foundedDisplay: "1979",
     foundedYear: 1979,
@@ -123,6 +127,7 @@ export const companies: Company[] = [
   {
     slug: "heartland-recreational-vehicles",
     name: "Heartland Recreational Vehicles",
+    website: "https://en.wikipedia.org/wiki/Heartland_Recreational_Vehicles",
     location: "Elkhart, IN",
     foundedDisplay: "December 2003",
     foundedYear: 2003,
@@ -150,6 +155,7 @@ export const companies: Company[] = [
   {
     slug: "peoplelink-llc",
     name: "PeopleLink, LLC",
+    website: "https://www.peoplelinkstaffing.com/",
     location: "South Bend, IN",
     foundedDisplay: "2000",
     foundedYear: 2000,
@@ -177,6 +183,7 @@ export const companies: Company[] = [
   {
     slug: "cruiser-rv-drv",
     name: "Cruiser RV & DRV",
+    website: "https://www.prnewswire.com/news-releases/thor-announces-acquisition-of-towable-manufacturer-cruiser-rv-and-drv-300015291.html",
     location: "Howe & LaGrange, IN",
     foundedDisplay: "2002 (DRV); Cruiser RV acquired 2004",
     foundedYear: 2002,
@@ -204,6 +211,7 @@ export const companies: Company[] = [
   {
     slug: "fairmont-homes-inc",
     name: "Fairmont Homes, Inc.",
+    website: "https://www.cavcohomes.com/",
     location: "Nappanee, IN",
     foundedDisplay: "1971",
     foundedYear: 1971,
@@ -231,6 +239,7 @@ export const companies: Company[] = [
   {
     slug: "jayco",
     name: "Jayco",
+    website: "https://en.wikipedia.org/wiki/Jayco",
     location: "Middlebury, IN",
     foundedDisplay: "1968",
     foundedYear: 1968,
@@ -258,6 +267,7 @@ export const companies: Company[] = [
   {
     slug: "grand-design-rv",
     name: "Grand Design RV",
+    website: "https://www.granddesignrv.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2011",
     foundedYear: 2011,
@@ -285,6 +295,7 @@ export const companies: Company[] = [
   {
     slug: "hoosier-racing-tire",
     name: "Hoosier Racing Tire",
+    website: "https://en.wikipedia.org/wiki/Hoosier_Racing_Tire",
     location: "Lakeville, IN (founded South Bend)",
     foundedDisplay: "1957",
     foundedYear: 1957,
@@ -312,6 +323,7 @@ export const companies: Company[] = [
   {
     slug: "press-ganey-associates",
     name: "Press Ganey Associates",
+    website: "https://en.wikipedia.org/wiki/Press_Ganey",
     location: "South Bend, IN",
     foundedDisplay: "1985",
     foundedYear: 1985,
@@ -347,6 +359,7 @@ export const companies: Company[] = [
   {
     slug: "arboc-specialty-vehicles-llc",
     name: "ARBOC Specialty Vehicles, LLC",
+    website: "https://arbocsv.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2008",
     foundedYear: 2008,
@@ -374,6 +387,7 @@ export const companies: Company[] = [
   {
     slug: "travel-management-company-tmc-tmc-jets",
     name: "Travel Management Company (TMC / TMC Jets)",
+    website: "https://www.prnewswire.com/news-releases/wheels-up-acquires-travel-management-company-300860664.html",
     location: "Elkhart, IN",
     foundedDisplay: "Not specified",
     foundedYear: null,
@@ -401,6 +415,7 @@ export const companies: Company[] = [
   {
     slug: "boat-holdings-llc-bennington-godfrey-hurricane-rinker",
     name: "Boat Holdings, LLC (Bennington, Godfrey, Hurricane, Rinker)",
+    website: "https://www.benningtonmarine.com/",
     location: "Elkhart, IN",
     foundedDisplay: "1997",
     foundedYear: 1997,
@@ -428,6 +443,7 @@ export const companies: Company[] = [
   {
     slug: "newmar-corporation",
     name: "Newmar Corporation",
+    website: "https://www.newmarcorp.com/",
     location: "Nappanee, IN",
     foundedDisplay: "1968 (family owned since 1990)",
     foundedYear: 1968,
@@ -455,6 +471,7 @@ export const companies: Company[] = [
   {
     slug: "atlas-3d-inc",
     name: "Atlas 3D, Inc.",
+    website: "https://atlas3d.xyz/",
     location: "Plymouth, IN",
     foundedDisplay: "April 2017",
     foundedYear: 2017,
@@ -482,6 +499,7 @@ export const companies: Company[] = [
   {
     slug: "elkhart-plastics-inc",
     name: "Elkhart Plastics, Inc.",
+    website: "https://epi-roto.com/",
     location: "South Bend, IN (facilities also in Elkhart & Middlebury)",
     foundedDisplay: "1988",
     foundedYear: 1988,
@@ -509,6 +527,7 @@ export const companies: Company[] = [
   {
     slug: "furrion",
     name: "Furrion",
+    website: "https://furrion.com/",
     location: "Elkhart, IN (dual HQ w/ Hong Kong)",
     foundedDisplay: "2002/2004",
     foundedYear: 2002,
@@ -536,6 +555,7 @@ export const companies: Company[] = [
   {
     slug: "the-commodore-corporation",
     name: "The Commodore Corporation",
+    website: "https://www.commodorehomes.com/",
     location: "Elkhart / Goshen, IN",
     foundedDisplay: "Roots to 1952",
     foundedYear: 1952,
@@ -563,6 +583,7 @@ export const companies: Company[] = [
   {
     slug: "us-rod-manufacturing",
     name: "US Rod (Manufacturing)",
+    website: "https://usrodco.com/",
     location: "Nappanee, IN",
     foundedDisplay: "2018",
     foundedYear: 2018,
@@ -590,6 +611,7 @@ export const companies: Company[] = [
   {
     slug: "experigreen-lawn-care-experigreen-mgt-llc",
     name: "ExperiGreen Lawn Care (ExperiGreen MGT, LLC)",
+    website: "https://experigreen.com/",
     location: "Mishawaka, IN",
     foundedDisplay: "2016",
     foundedYear: 2016,
@@ -617,6 +639,7 @@ export const companies: Company[] = [
   {
     slug: "look-trailers",
     name: "LOOK\u00ae Trailers",
+    website: "https://www.looktrailers.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2010",
     foundedYear: 2010,
@@ -644,6 +667,7 @@ export const companies: Company[] = [
   {
     slug: "crcl-solutions-llc",
     name: "CRCL Solutions, LLC",
+    website: "https://crclsolutions.com/",
     location: "South Bend, IN",
     foundedDisplay: "2021",
     foundedYear: 2021,
@@ -671,6 +695,7 @@ export const companies: Company[] = [
   {
     slug: "waste-away-group-ltd-himco-borden-recycling-works-integra",
     name: "Waste-Away Group, Ltd. (Himco, Borden, Recycling Works, Integra)",
+    website: "https://wasteawaygroup.com/",
     location: "Elkhart, IN",
     foundedDisplay: "1940",
     foundedYear: 1940,
