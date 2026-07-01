@@ -19,20 +19,23 @@ export default function FounderSpotlight() {
     []
   );
   const [index, setIndex] = useState(0);
+  const [autoplay, setAutoplay] = useState(true);
 
   useEffect(() => {
-    if (featured.length <= 1) return;
+    if (!autoplay || featured.length <= 1) return;
     const t = window.setInterval(() => {
       setIndex((i) => (i + 1) % featured.length);
     }, ROTATE_MS);
     return () => window.clearInterval(t);
-  }, [featured.length]);
+  }, [autoplay, featured.length]);
 
   if (featured.length === 0) return null;
   const c = featured[index];
   const color = industryColor(c.industry);
-  const goTo = (i: number) =>
+  const goTo = (i: number) => {
+    setAutoplay(false);
     setIndex(((i % featured.length) + featured.length) % featured.length);
+  };
 
   return (
     <section
