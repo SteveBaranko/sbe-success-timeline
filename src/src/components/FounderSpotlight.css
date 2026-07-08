@@ -1,7 +1,11 @@
+/* ==========================================================================
+   Founder Spotlight — two-panel carousel (Founder | Company)
+   ========================================================================== */
+
 .spotlight {
-  border-bottom: 1px solid var(--line);
   padding: 44px 48px 36px;
   background: var(--bg-panel);
+  border-bottom: 1px solid var(--line);
 }
 
 .spotlight-inner {
@@ -10,28 +14,29 @@
 }
 
 .spotlight-eyebrow {
+  margin-bottom: 24px;
   font-size: 11.5px;
   letter-spacing: 0.12em;
   color: var(--ink-faint);
-  margin-bottom: 24px;
 }
+
+/* ---- Stage (the two-panel card) ---- */
 
 .spotlight-stage {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  gap: 0;
+  align-items: stretch;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--bg);
   overflow: hidden;
-  min-height: 176px;
 }
 
 .spotlight-box {
-  padding: 28px 32px;
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 28px 32px;
   animation: spotlight-fade 0.4s ease;
 }
 
@@ -50,18 +55,20 @@
   }
 }
 
+/* ---- Founder panel ---- */
+
 .spotlight-badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
   width: 68px;
   height: 68px;
   border: 2px solid;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 700;
-  flex-shrink: 0;
 }
 
 .spotlight-box-text {
@@ -73,29 +80,37 @@
 }
 
 .spotlight-kicker {
+  margin-bottom: 6px;
   font-size: 10.5px;
   letter-spacing: 0.1em;
-  margin-bottom: 6px;
 }
 
 .spotlight-name {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--ink);
 }
 
 .spotlight-blurb {
   margin-top: 8px;
-  font-size: 14.5px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.55;
   color: var(--ink-dim);
+
+  /* clamp long bios so varying blurb lengths never distort card height */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
+
+/* ---- Company panel ---- */
 
 .spotlight-company-name {
   font-size: 22px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--ink);
 }
 
@@ -129,12 +144,14 @@
 .spotlight-tag {
   display: inline-block;
   margin-top: 14px;
+  padding: 5px 13px;
   border: 1px solid;
   border-radius: 999px;
-  padding: 5px 13px;
   font-size: 11.5px;
   font-family: var(--font-mono);
 }
+
+/* ---- Controls ---- */
 
 .spotlight-controls {
   display: flex;
@@ -145,17 +162,18 @@
 }
 
 .spotlight-arrow {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid var(--line-bright);
-  background: transparent;
-  color: var(--ink-dim);
-  cursor: pointer;
-  font-size: 14px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line-bright);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-dim);
+  font-size: 14px;
+  cursor: pointer;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
@@ -167,20 +185,21 @@
 
 .spotlight-dots {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  gap: 8px;
   max-width: 320px;
 }
 
 .spotlight-dot {
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  padding: 0;
   border: none;
+  border-radius: 50%;
   background: var(--line-bright);
   cursor: pointer;
-  padding: 0;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -189,15 +208,23 @@
   transform: scale(1.5);
 }
 
+/* ---- Responsive ---- */
+
 @media (max-width: 720px) {
   .spotlight {
     padding: 32px 20px 28px;
   }
+
   .spotlight-stage {
     grid-template-columns: 1fr;
   }
+
   .spotlight-box + .spotlight-box {
     border-left: none;
     border-top: 1px solid var(--line);
+  }
+
+  .spotlight-blurb {
+    -webkit-line-clamp: 6;
   }
 }

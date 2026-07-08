@@ -748,6 +748,34 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    slug: "trek10-inc",
+    name: "Trek10, Inc.",
+    website: "https://www.trek10.com/",
+    location: "South Bend, IN",
+    foundedDisplay: "2013",
+    foundedYear: 2013,
+    lat: 41.6764,
+    lng: -86.252,
+    industry: "Technology",
+    originBlurb: "Founded 2013 in South Bend; grew into an AWS Premier Tier Services Partner specializing in serverless and event-driven cloud architecture.",
+    classification: "Success Story (major)",
+    founderNames: "Jim Abercrombie (co-founder)",
+    founderBlurb: "Built a South Bend cloud consultancy into a recognized AWS Premier Tier Partner known for serverless architecture, IoT, and CloudOps work, before a full-scale industry acquisition twelve years after founding.",
+    dnbIndustry: "Computer Systems Design Services",
+    naicsDescription: "Custom Computer Programming Services",
+    employeesTotal: "51-100",
+    exits: [
+      {
+        acquiredBy: "Caylent (backed by Gryphon Investors)",
+        yearDisplay: "October 21, 2025",
+        year: 2025,
+        dealValue: "Not disclosed",
+        rationale: "Founded 2013 in South Bend as an AWS-focused cloud consultancy; grew into a Premier Tier AWS Services Partner with six-time AWS Partner of the Year recognition across migration, data, and AI solutions before being acquired by Caylent, a PE-backed AWS partner, to form what the companies describe as the most comprehensive dedicated AWS services partner in the industry \u2014 a clean, growth-driven exit twelve years after founding. Trek10's public sector division was spun off separately as TrekFed ahead of the deal.",
+        source: "https://www.prnewswire.com/news-releases/caylent-acquires-trek10-to-create-the-most-comprehensive-dedicated-aws-services-partner-in-the-industry-302590224.html",
+      },
+    ],
+  },
 ];
 
 export const industries = Array.from(new Set(companies.map((c) => c.industry))).sort();
