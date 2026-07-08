@@ -1,0 +1,57 @@
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 22px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-brand-mark {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--rust-bright);
+  border: 1px solid var(--rust);
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+
+.site-brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+}
+
+.site-nav a {
+  color: var(--ink-dim);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover {
+  color: var(--rust-bright);
+}
+
+@media (max-width: 640px) {
+  .site-header-inner {
+    padding: 18px 20px;
+  }
+}

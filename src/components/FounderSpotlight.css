@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Founder Spotlight — two-panel carousel (Founder | Company)
+   ========================================================================== */
+
+.spotlight {
+  padding: 44px 48px 36px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.spotlight-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.spotlight-eyebrow {
+  margin-bottom: 24px;
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+}
+
+/* ---- Stage (the two-panel card) ---- */
+
+.spotlight-stage {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.spotlight-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 32px;
+  animation: spotlight-fade 0.4s ease;
+}
+
+.spotlight-box + .spotlight-box {
+  border-left: 1px solid var(--line);
+}
+
+@keyframes spotlight-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Founder panel ---- */
+
+.spotlight-badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.spotlight-box-text {
+  min-width: 0;
+}
+
+.spotlight-box-text-full {
+  width: 100%;
+}
+
+.spotlight-kicker {
+  margin-bottom: 6px;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+}
+
+.spotlight-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.spotlight-blurb {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+
+  /* clamp long bios so varying blurb lengths never distort card height */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+/* ---- Company panel ---- */
+
+.spotlight-company-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.spotlight-company-name-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.spotlight-company-name-link:hover,
+.spotlight-company-name-link:focus-visible {
+  border-bottom-color: var(--ink);
+}
+
+.spotlight-company-name-link::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.55em;
+  vertical-align: super;
+  opacity: 0.55;
+}
+
+.spotlight-company-meta {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+.spotlight-tag {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 5px 13px;
+  border: 1px solid;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-family: var(--font-mono);
+}
+
+/* ---- Controls ---- */
+
+.spotlight-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.spotlight-arrow {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line-bright);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-dim);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.spotlight-arrow:hover,
+.spotlight-arrow:focus-visible {
+  border-color: var(--rust);
+  color: var(--rust-bright);
+}
+
+.spotlight-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+  max-width: 320px;
+}
+
+.spotlight-dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--line-bright);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.spotlight-dot.is-active {
+  background: var(--rust-bright);
+  transform: scale(1.5);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 720px) {
+  .spotlight {
+    padding: 32px 20px 28px;
+  }
+
+  .spotlight-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-box + .spotlight-box {
+    border-left: none;
+    border-top: 1px solid var(--line);
+  }
+
+  .spotlight-blurb {
+    -webkit-line-clamp: 6;
+  }
+}
