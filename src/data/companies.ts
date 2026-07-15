@@ -14,7 +14,6 @@ export interface Exit {
 export interface Company {
   slug: string;
   name: string;
-  website: string | null;
   location: string | null;
   foundedDisplay: string | null;
   foundedYear: number | null;
@@ -35,7 +34,6 @@ export const companies: Company[] = [
   {
     slug: "keystone-rv",
     name: "Keystone RV",
-    website: "https://www.keystonerv.com/",
     location: "Goshen, IN",
     foundedDisplay: "1996",
     foundedYear: 1996,
@@ -63,7 +61,6 @@ export const companies: Company[] = [
   {
     slug: "forest-river-inc",
     name: "Forest River, Inc.",
-    website: "https://en.wikipedia.org/wiki/Forest_River_(company)",
     location: "Elkhart, IN",
     foundedDisplay: "1996",
     foundedYear: 1996,
@@ -91,7 +88,6 @@ export const companies: Company[] = [
   {
     slug: "tire-rack-inc",
     name: "Tire Rack, Inc.",
-    website: "https://en.wikipedia.org/wiki/Tire_Rack",
     location: "South Bend, IN",
     foundedDisplay: "1979",
     foundedYear: 1979,
@@ -127,7 +123,6 @@ export const companies: Company[] = [
   {
     slug: "heartland-recreational-vehicles",
     name: "Heartland Recreational Vehicles",
-    website: "https://en.wikipedia.org/wiki/Heartland_Recreational_Vehicles",
     location: "Elkhart, IN",
     foundedDisplay: "December 2003",
     foundedYear: 2003,
@@ -155,7 +150,6 @@ export const companies: Company[] = [
   {
     slug: "peoplelink-llc",
     name: "PeopleLink, LLC",
-    website: "https://www.peoplelinkstaffing.com/",
     location: "South Bend, IN",
     foundedDisplay: "2000",
     foundedYear: 2000,
@@ -183,7 +177,6 @@ export const companies: Company[] = [
   {
     slug: "cruiser-rv-drv",
     name: "Cruiser RV & DRV",
-    website: "https://www.prnewswire.com/news-releases/thor-announces-acquisition-of-towable-manufacturer-cruiser-rv-and-drv-300015291.html",
     location: "Howe & LaGrange, IN",
     foundedDisplay: "2002 (DRV); Cruiser RV acquired 2004",
     foundedYear: 2002,
@@ -211,7 +204,6 @@ export const companies: Company[] = [
   {
     slug: "fairmont-homes-inc",
     name: "Fairmont Homes, Inc.",
-    website: "https://www.cavcohomes.com/",
     location: "Nappanee, IN",
     foundedDisplay: "1971",
     foundedYear: 1971,
@@ -239,7 +231,6 @@ export const companies: Company[] = [
   {
     slug: "jayco",
     name: "Jayco",
-    website: "https://en.wikipedia.org/wiki/Jayco",
     location: "Middlebury, IN",
     foundedDisplay: "1968",
     foundedYear: 1968,
@@ -267,7 +258,6 @@ export const companies: Company[] = [
   {
     slug: "grand-design-rv",
     name: "Grand Design RV",
-    website: "https://www.granddesignrv.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2011",
     foundedYear: 2011,
@@ -295,7 +285,6 @@ export const companies: Company[] = [
   {
     slug: "hoosier-racing-tire",
     name: "Hoosier Racing Tire",
-    website: "https://en.wikipedia.org/wiki/Hoosier_Racing_Tire",
     location: "Lakeville, IN (founded South Bend)",
     foundedDisplay: "1957",
     foundedYear: 1957,
@@ -323,7 +312,6 @@ export const companies: Company[] = [
   {
     slug: "press-ganey-associates",
     name: "Press Ganey Associates",
-    website: "https://en.wikipedia.org/wiki/Press_Ganey",
     location: "South Bend, IN",
     foundedDisplay: "1985",
     foundedYear: 1985,
@@ -359,7 +347,6 @@ export const companies: Company[] = [
   {
     slug: "arboc-specialty-vehicles-llc",
     name: "ARBOC Specialty Vehicles, LLC",
-    website: "https://arbocsv.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2008",
     foundedYear: 2008,
@@ -387,7 +374,6 @@ export const companies: Company[] = [
   {
     slug: "travel-management-company-tmc-tmc-jets",
     name: "Travel Management Company (TMC / TMC Jets)",
-    website: "https://www.prnewswire.com/news-releases/wheels-up-acquires-travel-management-company-300860664.html",
     location: "Elkhart, IN",
     foundedDisplay: "Not specified",
     foundedYear: null,
@@ -415,7 +401,6 @@ export const companies: Company[] = [
   {
     slug: "boat-holdings-llc-bennington-godfrey-hurricane-rinker",
     name: "Boat Holdings, LLC (Bennington, Godfrey, Hurricane, Rinker)",
-    website: "https://www.benningtonmarine.com/",
     location: "Elkhart, IN",
     foundedDisplay: "1997",
     foundedYear: 1997,
@@ -443,7 +428,6 @@ export const companies: Company[] = [
   {
     slug: "newmar-corporation",
     name: "Newmar Corporation",
-    website: "https://www.newmarcorp.com/",
     location: "Nappanee, IN",
     foundedDisplay: "1968 (family owned since 1990)",
     foundedYear: 1968,
@@ -471,7 +455,6 @@ export const companies: Company[] = [
   {
     slug: "atlas-3d-inc",
     name: "Atlas 3D, Inc.",
-    website: "https://atlas3d.xyz/",
     location: "Plymouth, IN",
     foundedDisplay: "April 2017",
     foundedYear: 2017,
@@ -499,7 +482,6 @@ export const companies: Company[] = [
   {
     slug: "elkhart-plastics-inc",
     name: "Elkhart Plastics, Inc.",
-    website: "https://epi-roto.com/",
     location: "South Bend, IN (facilities also in Elkhart & Middlebury)",
     foundedDisplay: "1988",
     foundedYear: 1988,
@@ -527,7 +509,6 @@ export const companies: Company[] = [
   {
     slug: "furrion",
     name: "Furrion",
-    website: "https://furrion.com/",
     location: "Elkhart, IN (dual HQ w/ Hong Kong)",
     foundedDisplay: "2002/2004",
     foundedYear: 2002,
@@ -555,7 +536,6 @@ export const companies: Company[] = [
   {
     slug: "the-commodore-corporation",
     name: "The Commodore Corporation",
-    website: "https://www.commodorehomes.com/",
     location: "Elkhart / Goshen, IN",
     foundedDisplay: "Roots to 1952",
     foundedYear: 1952,
@@ -583,7 +563,6 @@ export const companies: Company[] = [
   {
     slug: "us-rod-manufacturing",
     name: "US Rod (Manufacturing)",
-    website: "https://usrodco.com/",
     location: "Nappanee, IN",
     foundedDisplay: "2018",
     foundedYear: 2018,
@@ -611,7 +590,6 @@ export const companies: Company[] = [
   {
     slug: "experigreen-lawn-care-experigreen-mgt-llc",
     name: "ExperiGreen Lawn Care (ExperiGreen MGT, LLC)",
-    website: "https://experigreen.com/",
     location: "Mishawaka, IN",
     foundedDisplay: "2016",
     foundedYear: 2016,
@@ -639,7 +617,6 @@ export const companies: Company[] = [
   {
     slug: "look-trailers",
     name: "LOOK\u00ae Trailers",
-    website: "https://www.looktrailers.com/",
     location: "Middlebury, IN",
     foundedDisplay: "2010",
     foundedYear: 2010,
@@ -667,7 +644,6 @@ export const companies: Company[] = [
   {
     slug: "crcl-solutions-llc",
     name: "CRCL Solutions, LLC",
-    website: "https://crclsolutions.com/",
     location: "South Bend, IN",
     foundedDisplay: "2021",
     foundedYear: 2021,
@@ -695,7 +671,6 @@ export const companies: Company[] = [
   {
     slug: "waste-away-group-ltd-himco-borden-recycling-works-integra",
     name: "Waste-Away Group, Ltd. (Himco, Borden, Recycling Works, Integra)",
-    website: "https://wasteawaygroup.com/",
     location: "Elkhart, IN",
     foundedDisplay: "1940",
     foundedYear: 1940,
@@ -717,62 +692,6 @@ export const companies: Company[] = [
         dealValue: "Not disclosed",
         rationale: "Founded 1940 by Charles Himes Sr. as a one-truck freight/waste hauling operation; built across three generations of the Himes family (grandfather \u2192 sons Charles Jr./Stephen \u2192 grandsons Charlie/Chris/Ken) into a diversified 80+ year, multi-division regional waste, recycling, and document-destruction business serving 11 counties, including its own acquisitions (Site Works, 2021) before selling to national consolidator Waste Connections \u2014 a clean multi-generational family exit, very recent (under 2 years old).",
         source: "https://www.wastedive.com/news/waste-connections-acquires-waste-away-group-indiana/708472/",
-      },
-    ],
-  },
-  {
-    slug: "nimbello",
-    name: "Nimbello (formerly Easy Access)",
-    website: "https://www.nimbello.com/",
-    location: "Granger, IN",
-    foundedDisplay: "2010",
-    foundedYear: 2010,
-    lat: 41.7420,
-    lng: -86.1189,
-    industry: "Technology",
-    originBlurb: "Founded 2010 in Granger by Milind Agtey, a Notre Dame MBA and former Crowe tax partner who emigrated from India in 1977; bootstrapped by borrowing against his own home mortgage.",
-    classification: "Success Story (exceptional)",
-    founderNames: "Milind Agtey & Sunjay Agtey",
-    founderBlurb: "A father who emigrated from India with nothing built a purchase-to-pay automation company from his home mortgage; his son, a Notre Dame EMBA who'd built a career at Groupon and other Chicago tech startups, joined in 2020 and helped drive 300% revenue growth before a clean, founder-driven exit.",
-    dnbIndustry: "Business Support Services",
-    naicsDescription: "Data Processing, Hosting, and Related Services",
-    employeesTotal: "50",
-    exits: [
-      {
-        acquiredBy: "PairSoft",
-        yearDisplay: "March 19, 2026",
-        year: 2026,
-        dealValue: "Not disclosed",
-        rationale: "Founder Milind Agtey personally decided to sell after growing the company from a bootstrapped 2010 startup into a 60+ customer, 50-employee purchase-order-matching specialist with 300% revenue growth from 2022-2025 \u2014 his own on-record quote frames the sale as the natural next step after achieving his founding goal, not a distress exit. A clean, founder-driven sale to a well-capitalized acquirer.",
-        source: "https://www.pairsoft.com/resources/news-events/pairsoft-acquires-nimbello/",
-      },
-    ],
-  },
-  {
-    slug: "trek10-inc",
-    name: "Trek10, Inc.",
-    website: "https://www.trek10.com/",
-    location: "South Bend, IN",
-    foundedDisplay: "2013",
-    foundedYear: 2013,
-    lat: 41.6764,
-    lng: -86.252,
-    industry: "Technology",
-    originBlurb: "Founded 2013 in South Bend; grew into an AWS Premier Tier Services Partner specializing in serverless and event-driven cloud architecture.",
-    classification: "Success Story (major)",
-    founderNames: "Jim Abercrombie (co-founder)",
-    founderBlurb: "Built a South Bend cloud consultancy into a recognized AWS Premier Tier Partner known for serverless architecture, IoT, and CloudOps work, before a full-scale industry acquisition twelve years after founding.",
-    dnbIndustry: "Computer Systems Design Services",
-    naicsDescription: "Custom Computer Programming Services",
-    employeesTotal: "51-100",
-    exits: [
-      {
-        acquiredBy: "Caylent (backed by Gryphon Investors)",
-        yearDisplay: "October 21, 2025",
-        year: 2025,
-        dealValue: "Not disclosed",
-        rationale: "Founded 2013 in South Bend as an AWS-focused cloud consultancy; grew into a Premier Tier AWS Services Partner with six-time AWS Partner of the Year recognition across migration, data, and AI solutions before being acquired by Caylent, a PE-backed AWS partner, to form what the companies describe as the most comprehensive dedicated AWS services partner in the industry \u2014 a clean, growth-driven exit twelve years after founding. Trek10's public sector division was spun off separately as TrekFed ahead of the deal.",
-        source: "https://www.prnewswire.com/news-releases/caylent-acquires-trek10-to-create-the-most-comprehensive-dedicated-aws-services-partner-in-the-industry-302590224.html",
       },
     ],
   },

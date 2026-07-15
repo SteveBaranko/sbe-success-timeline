@@ -10,6 +10,7 @@ export default function SiteHeader() {
         </div>
         <nav className="site-nav mono">
           <a href="#timeline">Timeline</a>
+          <a href="#breakdown">Breakdown</a>
           <a href="#about">About</a>
         </nav>
       </div>

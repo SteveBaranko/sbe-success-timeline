@@ -71,20 +71,7 @@ export default function FounderSpotlight() {
               <div className="spotlight-kicker mono" style={{ color }}>
                 COMPANY
               </div>
-              <h3 className="spotlight-company-name">
-                {c.website ? (
-                  <a
-                    href={c.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="spotlight-company-name-link"
-                  >
-                    {c.name}
-                  </a>
-                ) : (
-                  c.name
-                )}
-              </h3>
+              <h3 className="spotlight-company-name">{c.name}</h3>
               <div className="spotlight-company-meta mono">
                 {c.location} · founded {c.foundedYear ?? "???"}
               </div>

@@ -30,7 +30,6 @@ function packNodes(sorted: { company: Company; x: number }[]): PlacedNode[] {
 }
 
 function pickTickStep(pxPerYear: number): number {
-  // Choose spacing so labels never crowd, regardless of container width.
   const candidates = [5, 10, 20, 25];
   for (const step of candidates) {
     if (pxPerYear * step >= 46) {
@@ -251,20 +250,7 @@ export default function Timeline() {
             >
               {active.industry}
             </div>
-            <h3 className="tl-card-title">
-              {active.website ? (
-                <a
-                  href={active.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="tl-card-title-link"
-                >
-                  {active.name}
-                </a>
-              ) : (
-                active.name
-              )}
-            </h3>
+            <h3 className="tl-card-title">{active.name}</h3>
             <div className="tl-card-meta mono">
               {active.location} · Founded {active.foundedDisplay ?? "???"}
             </div>
